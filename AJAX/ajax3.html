@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .userinfo{
+            display: flex; background-color: #f4f4f4; padding: 10px; margin-bottom: 10px;
+        }
+        .userinfo ul{
+            list-style: none;
+        }
+        .userinfo img{
+            width: 70px;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Get Github Info</button>
+    <br />
+    <h1>Git Users</h1>
+    <div id="gitusers"></div>
+</body>
+    <script>
+        document.getElementById('btn').addEventListener('click', loadUsers);
+        
+        function loadUsers(){
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://api.github.com/users', true);
+            xhr.onload = function () {
+                if(xhr.status == 200){
+                    let users = JSON.parse(this.responseText);
+                    let output = '';
+                    for(let i in users){
+                        output += 
+                        '<div class="userinfo">' +
+                            '<img src="'+users[i].avatar_url+'">' +
+                            '<ul>' +
+                                '<li>ID: '+users[i].id+'</li>' +
+                                '<li>ID: '+users[i].login+'</li>' +
+                            '</ul>' +
+                        '</div>';
+                        document.getElementById('gitusers').innerHTML = output;
+                    }
+                }
+            }
+            xhr.send();
+        }
+    </script>
+</html>

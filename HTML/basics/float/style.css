@@ -1,0 +1,28 @@
+.left {
+    width: 150px;
+    background-color: coral;
+    color: darkgreen;
+    padding: 10px;
+    float: left;
+    margin: 10px;
+}
+.special {
+    float: right;
+}
+.v {
+    float: right;
+}
+.clear_float {
+    clear: left;
+}
+.clear_right {
+    clear: right;
+}
+.right {
+    width: 150px;
+    background-color: coral;
+    color: darkgreen;
+    padding: 10px;
+    float: right;
+    margin: 10px;
+}

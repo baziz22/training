@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content"></div>
+</body>
+<script>
+    const xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function () {
+        if(xhr.readyState == 4){
+            if(xhr.status == 200){
+                //document.getElementById('content').innerHTML = xhr.responseText;
+                document.getElementById('content').textContent = xhr.responseText;
+            }
+        }
+
+        if(xhr.status == 404){
+            console.log("File or resource not found!");
+        }
+    }
+    
+
+    xhr.open('GET', 'sample.txt', true);
+    xhr.send();
+    
+</script>
+</html>

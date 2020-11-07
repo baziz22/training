@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Sandbox</title>
+  </head>
+  <body>
+    <button id="btn">Get Text</button>
+    <button id="btn2">Get JSON</button>
+    <div id="output"></div>
+  </body>
+  <script>
+    document.getElementById("btn").addEventListener("click", loadText);
+    document.getElementById("btn2").addEventListener("click", loadJson);
+    function loadText() {
+      //fetch('sample.txt')
+      // promise
+      /* .then(function (response){
+                return response.text();
+            })
+            .then(function (data){
+                console.log(data);
+            }); */
+      fetch("sample.txt")
+        .then((res) => res.text())
+        //.then((data) => console.log(data));
+        .then((data) => {
+          document.getElementById("output").innerHTML = data;
+        })
+        .catch((error) => console.log(error));
+    }
+    function loadJson() {
+      fetch("users.json")
+        .then((res) => res.json())
+        .then((data) => {
+          let output = "<h2>Json Users</h2>";
+          data.forEach(function (user) {
+            output += `
+                    <ul>
+                        <li>ID: ${user.id}</li>
+                        <li>Name: ${user.Name}</li>
+                        <li>Email: ${user.email}</li>
+                    </ul>
+                    `;
+          });
+          document.getElementById("output").innerHTML = output;
+        });
+    }
+  </script>
+</html>

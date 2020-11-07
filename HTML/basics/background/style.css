@@ -1,0 +1,25 @@
+body {
+    background-color: burlywood;
+}
+div {
+    border: cadetblue 1px solid;
+    height: 200px;
+    width: 200px;
+    margin: 20px 20px;
+}
+#one {
+    background-image: url(/HTML/basics/background/logo-_emp_alpha_50x50.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 12% 15%;
+    border: 1px solid #000;
+    border-radius: 10px 50% 350px;
+    /*          color      "Hor" "Ver" "Blur" "Spread" */
+    box-shadow: peachpuff 20px 5px 10px 5px;
+    background-color: #cf7f74;
+    box-sizing: ;
+}
+#two {
+    background: #f8d68c url(/HTML/basics/background/logo-_emp_alpha_50x50.png) no-repeat scroll 80% 60%;
+    
+}

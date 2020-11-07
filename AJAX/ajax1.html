@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Get Text File</button>
+</body>
+
+<script>
+    document.getElementById('btn').addEventListener('click', loadText);
+    function loadText() {
+        //console.log('It Clicked');
+        document.write('It Clicked');
+        // Create XHR object
+        var xhr = new XMLHttpRequest();
+        console.log(xhr);
+        // Open: type, URL, Asyncronous
+        xhr.open('GET', 'sample.txt', true)
+        xhr.onload = function() {
+            // you can use xhr.status or this.status
+            // 200 means the request to the server is OK.
+            if (xhr.status == 200) {
+                document.write(this.responseText);
+            } else {
+                document.write('this is not status of 200');
+            }
+        }
+        // Send request to the browser
+        xhr.send();
+    }
+</script>
+</html>

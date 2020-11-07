@@ -1,0 +1,20 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div {
+    border: 1px solid #CCC;
+    padding: 10px;
+    column-count: 4;
+    column-gap: 50px;
+    column-rule-width: 2px;
+    column-rule-style: solid;
+    column-rule-color: #080;
+    /* columns: 100px auto; */
+}
+
+div h2 {
+    column-span: all;
+    
+}

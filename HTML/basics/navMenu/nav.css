@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+
+#nav ul {
+  padding: 0;
+  margin: 0;
+}
+#nav ul li {
+  float: left;
+  list-style: none;
+  background-color: #ebebeb;
+}
+#nav ul li a {
+  padding: 1px 5px;
+  text-decoration: none;
+  color: red;
+  border-right: 2px solid #cfcfcf;
+}
+
+#nav ul li a:hover,
+#nav ul li:hover a {
+  background-color: #fff;
+}
+#nav ul li:hover ul li a {
+  background-color: #cfcfcf;
+}
+#nav ul li:hover ul li a:hover {
+  background-color: #fff;
+}
+#nav ul ul {
+  position: absolute;
+  left: -999px;
+}
+
+#nav ul li:hover ul {
+  left: auto;
+}
+
+#nav ul li ul li {
+}

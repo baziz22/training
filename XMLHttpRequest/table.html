@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <table id="tableId" class="tableClass">
+      <thead>
+        <tr>
+          <td>Ranking</td>
+          <td>Full Name</td>
+          <td>Points</td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- To be filled -->
+        <tr>
+          <td>1</td>
+          <td>Dom</td>
+          <td>1340</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Bader</td>
+          <td>1120</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Sarah</td>
+          <td>932</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  <script>
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "data/rankings.json");
+    const rankingBody = document.querySelector("#tableId > tbody");
+
+    function loadTable(){
+
+
+      xhr.onload = () => {
+        // Clear out existing table data
+        while (rankingBody.firstChild) {
+          rankingBody.removeChild(rankingBody.firstChild);
+        }
+        // Populate table
+        const content = JSON.parse(xhr.responseText);
+        //console.log(content);
+        content.forEach((row) => {
+          const tr = document.createElement("tr");
+
+          row.forEach((cell) => {
+            const td = document.createElement("td");
+            td.textContent = cell;
+            tr.appendChild(td);
+            //console.log(cell);
+          });
+
+          rankingBody.appendChild(tr);
+        });
+      }
+      xhr.send();
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {loadTable(); });
+  </script>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script></script>
+    <style>
+        body {
+            background: #aaabd1;
+        }
+        fieldset {
+            background: #12b8de;
+            border: 1px solid #CCC;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        legend {
+            background: #45edac;
+            border: 1px solid #CCC;
+            padding: 5px;
+        }
+        input {
+            padding: 8px; 
+        }
+        input[type="text"], input[type="password"] {
+            display: block;
+            width: 300px;
+        }
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="" name="register">
+        <fieldset>
+            <legend>
+                Personal Information
+            </legend>
+            <label for="">Username</label>
+            <input type="text" name="username">
+            <label for="">Password</label>
+            <input type="password" name="password">
+            <label for="">E-mail</label>
+            <input type="text" name="email">
+            <label for="">Gender</label>
+            <select name="" id="">
+                <option value="">Male</option>
+                <option value="">Female</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            
+            <legend>
+                Your Favorite
+            </legend>
+            <label for="">Your Favorite Text Editor</label>
+            <input type="radio" name="editor">KomodoEdit<br />
+            <input type="radio" name="editor">Netbeens<br />
+            <input type="radio" name="editor">SublimeText<br />
+            <hr >
+            <label for="">Your Favorite Browser</label>
+            <input type="radio" name="browser">Google Chrome<br />
+            <input type="radio" name="browser">Mozilla Firefox<br />
+            <input type="radio" name="browser">Opera<br />
+            <hr >
+            <label for="">Your Favorite Operating System
+            </label>
+            <input type="checkbox" name="os">Mac OS<br />
+            <input type="checkbox" name="os">Linux<br />
+            <input type="checkbox" name="os">Windows<br />
+        </fieldset>
+        <fieldset>
+            <legend>
+                Your Message
+            </legend>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+</html>

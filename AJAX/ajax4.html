@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">Get users!</button>
+    <hr />
+    <h1>Get Form</h1>
+    <form action="process.php" method="GET">
+      <input type="text" name="firstname" />
+      <input type="submit" value="SendGet" />
+    </form>
+    <br />
+    <h1>Get AJAX Form</h1>
+    <form id="getForm">
+      <input type="text" name="firstname" id="contents" />
+      <input type="submit" value="sendjaxget" />
+    </form>
+    <br />
+    <h1>Post Form</h1>
+    <form action="process.php" method="POST">
+        <input type="text" name="firstname">
+        <input type="submit" value="SendPost">
+    </form>
+    <br />
+    <h1>POST AJAX Form</h1>
+    <form id="postForm">
+      <input type="text" name="firstname" id="postcontents">
+      <input type="submit" value="SendjaxPost">
+    </form>
+  </body>
+  <script>
+    document.getElementById("btn").addEventListener("click", loadName);
+    document.getElementById("getForm").addEventListener("submit", loadName);
+    document.getElementById("postForm").addEventListener("submit", loadNamePost);
+    function loadName(event) {
+      event.preventDefault();
+      let enteredname = document.getElementById("contents").value;
+      let xhr = new XMLHttpRequest();
+      xhr.open('GET', 'process.php?firstname='+enteredname, true);
+      xhr.onload = function () {
+        console.log(xhr.responseText);
+      };
+      xhr.send();
+    }
+    function loadNamePost(event) {
+      event.preventDefault();
+      let enteredname = document.getElementById("postcontents").value;
+      let params = 'firstname='+enteredname;
+      let xhr = new XMLHttpRequest();
+      xhr.open('POST', 'process.php', true);
+      xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+      xhr.onload = function () {
+        console.log(xhr.responseText);
+      };
+      xhr.send(params);
+      // xhr.send("name=Bader&message=Welcome!");
+    }
+  </script>
+</html>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fd1efe96-6e15-4a01-8b32-f727176445f2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Fundamentals" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP7.4" />
+  <component name="ProjectId" id="1YWtZiovV22VKLn8E5xJSE2Fm63" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.test.php">
+    <configuration name="call_func.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Fundamentals/call_func.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Fundamentals/index.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Fundamentals/test.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="func.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/func.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="reg.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/reg.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.test.php" />
+        <item itemvalue="PHP Script.reg.php" />
+        <item itemvalue="PHP Script.func.php" />
+        <item itemvalue="JavaScript Debug.call_func.php" />
+        <item itemvalue="JavaScript Debug.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd1efe96-6e15-4a01-8b32-f727176445f2" name="Default Changelist" comment="" />
+      <created>1583070236023</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583070236023</updated>
+      <workItem from="1583070237220" duration="2179000" />
+      <workItem from="1583072963218" duration="4034000" />
+      <workItem from="1583330079584" duration="7495000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1226" y="109" key="#PHP" timestamp="1583070974737">
+      <screen x="0" y="23" width="1920" height="1003" />
+    </state>
+    <state x="1226" y="109" key="#PHP/0.23.1920.1003@0.23.1920.1003" timestamp="1583070974737" />
+    <state x="1318" y="210" key="#func.php" timestamp="1583079512385">
+      <screen x="0" y="23" width="1920" height="1004" />
+    </state>
+    <state x="1318" y="210" key="#func.php/0.23.1920.1004@0.23.1920.1004" timestamp="1583079512385" />
+    <state width="728" height="267" key="GridCell.Tab.0.bottom" timestamp="1583342764127">
+      <screen x="0" y="23" width="1920" height="989" />
+    </state>
+    <state width="728" height="272" key="GridCell.Tab.0.bottom/0.23.1920.1004@0.23.1920.1004" timestamp="1583081040339" />
+    <state width="728" height="267" key="GridCell.Tab.0.bottom/0.23.1920.989@0.23.1920.989" timestamp="1583342764127" />
+    <state width="728" height="267" key="GridCell.Tab.0.center" timestamp="1583342764126">
+      <screen x="0" y="23" width="1920" height="989" />
+    </state>
+    <state width="728" height="272" key="GridCell.Tab.0.center/0.23.1920.1004@0.23.1920.1004" timestamp="1583081040339" />
+    <state width="728" height="267" key="GridCell.Tab.0.center/0.23.1920.989@0.23.1920.989" timestamp="1583342764126" />
+    <state width="728" height="267" key="GridCell.Tab.0.left" timestamp="1583342764126">
+      <screen x="0" y="23" width="1920" height="989" />
+    </state>
+    <state width="728" height="272" key="GridCell.Tab.0.left/0.23.1920.1004@0.23.1920.1004" timestamp="1583081040338" />
+    <state width="728" height="267" key="GridCell.Tab.0.left/0.23.1920.989@0.23.1920.989" timestamp="1583342764126" />
+    <state width="728" height="267" key="GridCell.Tab.0.right" timestamp="1583342764126">
+      <screen x="0" y="23" width="1920" height="989" />
+    </state>
+    <state width="728" height="272" key="GridCell.Tab.0.right/0.23.1920.1004@0.23.1920.1004" timestamp="1583081040339" />
+    <state width="728" height="267" key="GridCell.Tab.0.right/0.23.1920.989@0.23.1920.989" timestamp="1583342764126" />
+    <state x="938" y="163" key="SettingsEditor" timestamp="1583074446626">
+      <screen x="0" y="23" width="1920" height="1004" />
+    </state>
+    <state x="938" y="163" key="SettingsEditor/0.23.1920.1004@0.23.1920.1004" timestamp="1583074446626" />
+    <state x="1228" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1583330086230">
+      <screen x="0" y="23" width="1920" height="989" />
+    </state>
+    <state x="1228" y="350" key="com.intellij.ide.util.TipDialog/0.23.1920.989@0.23.1920.989" timestamp="1583330086230" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Fundamentals$test_php.dat" NAME="test.php Coverage Results" MODIFIED="1583071131916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

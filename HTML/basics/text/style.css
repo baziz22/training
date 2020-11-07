@@ -1,0 +1,57 @@
+/* Box Sizing */
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 1000px;
+  border: 1px solid #454545;
+  font-family: "Trebuchet MS";
+}
+section {
+  width: 940px;
+  margin: 20px auto;
+  background-color: peachpuff;
+}
+div {
+  border: cadetblue 1px solid;
+  height: 200px;
+  width: 340px;
+  text-decoration: none;
+  line-height: 50px;
+  text-indent: 20%;
+  letter-spacing: normal;
+  /* white space normal means make a line break at the nearset space at the end of the line */
+  white-space: normal;
+  display: inline-block;
+  overflow: auto;
+  /* Word Wrap: even if there is no space available make a line break*/
+  /* word-wrap: break-word; */
+  background-color: rgb(223, 186, 138);
+}
+
+#en {
+  /* Text Properties */
+  color: #f00;
+  text-align: left;
+  direction: ltr;
+}
+#arabic {
+  direction: rtl;
+  text-align: right;
+  float: right;
+  width: 600px;
+}
+/* First Letter*/
+p.fl:first-letter {
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+  background-color: red;
+  margin: 0 10px 0;
+  padding: 10px 15px 0;
+  border-radius: 10px;
+}
+/* First Line */
+p.fl:first-line {
+  color: red;
+}
