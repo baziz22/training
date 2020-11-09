@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    direction: rtl;
+}
+#main {
+    margin: 20%;
+    border: 1px solid black;
+}
+
+header {
+    margin: 20%;
+    border: 1px solid pink;
+}
+#main,
+#header,
+#logo,
+#menubar,
+#site_content,
+#footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+  width: 950px;
+  height: 121px;
+}
+
+#main {
+    width: 950px;
+    margin: 20px auto;
+}
+
+#logo_text div {
+    float: right;
+}
+
+#logo_text #logo-left {
+    float: left;
+    direction: ltr;
+}
+
+#footer {
+    width: 950px;
+    font: normal 90% "trebuchet ms", arial, sans-serif;
+    height: 65px;
+    padding: 20px 0 5px 0;
+    text-align: center;
+    color: #fff;
+    background: transparent url(tab.png) repeat;
+  }
