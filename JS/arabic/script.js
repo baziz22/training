@@ -1,15 +1,8 @@
+'use strict'
 let x = 10;
 let y = 20;
 
 document.getElementById("namy").innerHTML = "Hello Javascript";
-if (x + y == 30) {
-  console.log("Perfect!");
-}
-
-document.getElementById("price").innerHTML = "";
-
-var bader = 50;
-var str = "50";
 
 document.write("<br />");
 
@@ -22,7 +15,7 @@ function sayHello() {
 
 function myInfo(myName) {
   var myName = "Nono";
-  myNum = 9;
+  var myNum = 9;
   return myName;
 }
 document.getElementById("price").innerHTML = "My number is " + myInfo();
@@ -43,48 +36,44 @@ clik.onkeyup = function () {
 };
 
 // array
-/*var friends = new Array();
 
- friends[0] = "Hassan";
+var friends = []; // Literal Way
+friends[0] = "Hassan";
 friends[1] = "Soha";
 friends[2] = "Ahmed";
 friends[3] = "Zahra";
-friends[4] = "Hind"; */
+friends[4] = "Hind";
 
-var friends = new Array("Hassan","Soha","Ahmed","Zahra","Hind");
+/* var friends = new Array(
+  "Hassan",
+  "Soha",
+  "Ahmed",
+  "Zahra",
+  "Hind"); */
 
 console.log(friends.length);
 friends.length = 3;
 
+//check if this is array or not ⬇︎.
 console.log(friends.length);
 if (friends.constructor === Array){
-    console.log('This is array');
+    console.log('This is a constructor array');
 }
-
-
-console.log(friends);
 
 console.log(friends.toString());
 console.log(friends.toLocaleString());
 
 var myDate = new Date();
 
-var myString = myDate.toLocaleString();
+var localString = myDate.toLocaleString();
 
 
 console.log('myDate: ', myDate);
 
-console.log('myString: ', myString);
+console.log('toLocalString: ', localString);
 
-console.log('myJoin: ', friends.join("|"));
+console.log('Using Join: ', friends.join("|"));
 
-friends.push('Bader');
-console.log(friends);
-friends[7] = "Khalid";
-friends[8] = "delete"
-console.log(friends);
-friends.unshift('Nada');
-console.log(friends);
 
 
 /* arrayName.splice (index, How Many, Items, Items2, ...) */
@@ -98,3 +87,37 @@ console.log(lastItem);
 friends.shift();
 console.log(friends);
 
+friends.push('Bader');
+console.log(friends);
+friends[7] = "Khalid";
+friends[8] = "delete";
+console.log(friends);
+friends.unshift('Nada');
+console.log(friends);
+
+var mySlicedArray = friends.slice(-4,-1);
+console.log(mySlicedArray);
+var newFriends = [
+  "Amani",
+  "Waad",
+  "Sarah"
+]
+var allFriends = friends.concat(newFriends);
+console.log(allFriends);
+
+friends.splice(6,1);
+console.log(friends);
+friends.splice(6,0, "Salman", "Huda");
+console.log(friends);
+// Search Elements
+var specialFriends = friends.indexOf("Bader");
+console.log(specialFriends);
+            // indexOf(Value, Start Index ⬇︎)
+specialFriends = friends.indexOf("Bader", 5);
+console.log(specialFriends);
+specialFriends = friends.lastIndexOf("Bader", -1);
+console.log(specialFriends);
+
+document.getElementById("myFriends").innerHTML = allFriends.join(" | ");
+document.getElementById("specialFriends").innerHTML = 
+"<span style='color:#F00'>" + friends[specialFriends] + "</span>";

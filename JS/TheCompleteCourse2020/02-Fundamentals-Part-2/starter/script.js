@@ -1,7 +1,7 @@
 // activate strict mode for the entire script
 // make it easy for us to write a secure JS code.
 'use strict'
-
+// Start of Functions Topics
 // start -------------------------------------------------------
 function logger(){
     console.log('Bader Binsunbil');
@@ -65,3 +65,6 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1980, 'Bob'));
 // end ---------------------------------------------------------
+//End of Functions Topics
+
+// Start of Array Topics
