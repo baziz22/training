@@ -9,24 +9,32 @@
 
 // Split First Example
 
-let myMainString = "I love Java and PHP and Javascript";
+let myString = "  I love Java \"and\" PHP and Javascript  ";
     // Split Second Example
-    let mySplittedString = myMainString.split(" ", 4);
-    mySplittedString = myMainString.split("-", 2);
+    let mySplit = myString.split(" ",4);
+    //mySplit = myString.split("-", 2);
     // Slice
-    let mySlicedString = myMainString.slice(7, 17);
+    let mySlice = myString.slice(9, 17);
     // Substr
-    let mySubStr = myMainString.substr(7, 1);
+    let mySubStr = myString.substr(9, 3);
     // Substring
-    let mySubString = myMainString.substring(19, 7);
+    let mySubString = myString.substring(21, 9);
+    // Search
+    let mySearch = myString.search("P");
+    //trim
+    let mytrim = myString.trim();
+    //charAt
+    let mycharAt = myString.charAt('7');
+    //replace              //g:global i:insensitive
+    let myReplace = myString.replace("/l/gi", "X");
 
-console.log(myMainString);
+console.log(myString);
 
-console.log(typeof myMainString);
+console.log(typeof mySearch);
 
-console.log(mySplittedString);
+console.log(mytrim);
 
-console.log(typeof mySplittedString);
+console.log(typeof mytrim);
 
 //---------------------------------
 

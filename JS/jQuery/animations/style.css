@@ -1,0 +1,13 @@
+div {
+  width: 300px;
+  background: #eee;
+  border: 1px solic #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+span {
+  color: #f00;
+  font-weight: bold;
+  display: none;
+}
