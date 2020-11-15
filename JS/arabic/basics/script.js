@@ -111,7 +111,7 @@ var newFriends = [
   "Sarah"
 ]
 var allFriends = friends.concat(newFriends);
-console.log(allFriends);
+console.log("all friends: "+allFriends);
 
 friends.splice(6,1);
 console.log(friends);
@@ -130,17 +130,46 @@ document.getElementById("myFriends").innerHTML = allFriends.join(" | ");
 document.getElementById("specialFriends").innerHTML = 
 "<span style='color:#F00'>" + friends[specialFriends] + "</span>";
 
-// Printing Array values to the page
-let types = []; // fill types into it.
-let holder = document.getElementById('printArray');
-for (let i = 0; i < friends.length; i++){
-  types.push(typeof friends[i]);
-  let index = i;
-  let type = typeof friends[i];
-  console.log(index+". " + friends[i] +" "+type);
-  holder.innerHTML += `${index}. ${friends[i]} ${type} <br />`;
+
+//make an object
+let person = {
+    name: "Bader",
+    lname: "Binsunbil",
+    email: function(){
+        return "baziz22@gmail.com";
+    },
+    address:{
+      street: "5 main st",
+      city: "Boston"
+    },
+    children:["Brianna","Nicholas"]
 }
-console.log(types);
+console.log(person);
+// access 
+console.log(person.name,person.email(), person.address.street,person.children[0]);
 
 
+// make any array of objects
+let people = [
+  {
+    name:"Brad",
+    salary: 5000
+  },
+  {
+    name:"John",
+    salary: 15000
+  },
+  {
+    name:"Bader",
+    salary: 25000
+  }
+]
+console.log(people[2].salary);
 
+let output = '';
+for(let i=0; i<people.length; i++){
+  
+  output += "<li>"+people[i].name+"</li>";
+
+}
+document.getElementById('people').innerHTML = output;
