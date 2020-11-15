@@ -1,0 +1,16 @@
+{
+    "people": [
+        {
+          "name":"Brad",
+          "salary": 5000
+        },
+        {
+          "name":"John",
+          "salary": 15000
+        },
+        {
+          "name":"Bader",
+          "salary": 25000
+        }
+      ]
+}

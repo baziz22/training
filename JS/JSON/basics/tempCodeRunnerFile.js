@@ -1,0 +1,1 @@
+document.getElementById('people').innerHTML = output;

@@ -139,12 +139,7 @@ let person = {
 console.log(person);
 // access 
 console.log(person.name,person.email(), person.address.street,person.children[0]);
-// convert to JSON
-person = JSON.stringify(person);
-console.log(person);
-// parse it back into an object
-person = JSON.parse(person);
-console.log(person);
+
 
 // make any array of objects
 let people = [
@@ -170,17 +165,3 @@ for(let i=0; i<people.length; i++){
 
 }
 document.getElementById('people').innerHTML = output;
-
-// Sending an XMLHttpRequest
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-       // Typical action to be performed when the document is ready:
-       //document.getElementById("demo").innerHTML = xhttp.responseText;
-       //console.log(xhttp.responseText);
-       //let response = JSON.parse(xhttp.responseText);
-       //console.log(response.people);
-    }
-};
-xhttp.open("GET", "filename", true);
-xhttp.send();
