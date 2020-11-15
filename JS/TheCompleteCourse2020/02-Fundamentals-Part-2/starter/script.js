@@ -1,5 +1,6 @@
 // activate strict mode for the entire script
 // make it easy for us to write a secure JS code.
+// use strict doesn't do type coercion.
 'use strict'
 // Start of Functions Topics
 // start -------------------------------------------------------
@@ -67,4 +68,26 @@ console.log(yearsUntilRetirement(1980, 'Bob'));
 // end ---------------------------------------------------------
 //End of Functions Topics
 
-// Start of Array Topics
+// Start of Array Topic
+// End of Array Topic
+
+// Start of Object topic
+
+const me = {
+    firstname: 'Bader',
+    lastname: 'Binsunbil',
+    salary: 6500,
+    bonus: 2300,
+    job: 'Systems Engineer',
+    his_friends: ['Zezo, Zeto, jhon'],
+    hasDriverLicense: false,
+    calcFul: function(){
+        this.total = this.salary + this.bonus;
+        return this.total;
+    },
+    getSummary: function() {
+        return `${this.firstname} ${this.lastname} is a ${this.job} and his full salary is $${this.calcFul()} and he has ${this.hasDriverLicense ? 'a' : 'no'} driver licens.`
+    } 
+};
+console.log(me.getSummary());
+// End of Object topic

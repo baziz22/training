@@ -1,0 +1,107 @@
+<DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>HTML</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width , intial-scale=1.0">
+</head>
+<body>
+    <header>
+        <div class="logo-img">
+            <img src="img/logo_85x85.png" width="50px">
+        </div>
+        <div class="logo-text">
+            <h4>مؤسسة أمواج الطاقة</h4>
+            <h5>Company Name Co</h5>
+        </div>
+    </header>
+    <nav>
+        <ul id="menu">
+            <!--  -->
+            
+            <li class="active" >
+                <a href="index.html">الرئيسية</a>
+            </li>
+            <li><a href="about.html">عن الشركة</a></li>
+            <li><a href="portfolio.html">منتجاتنا</a></li>
+            <li><a href="portfolio.html">خدماتنا</a></li>
+            <li><a href="contact.html">أتصل بنا</a></li>
+        </ul>
+    </nav>
+    <div class="mainContent">
+        <div class="content">
+            <article class="topContent">
+                <header class="">
+                    <h2>
+                        <a href="#" title="first Post">
+                        Frist Post
+                        </a>
+                    </h2>
+                </header>
+                <footer>
+                    <p class="post-info">
+                        This post written by Bader
+                    </p>
+                </footer>
+                <content>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </content>
+            </article>
+            <article class="bottomContent">
+                <header class="">
+                    <h2>
+                        <a href="#" title="second Post">
+                        Second Post
+                        </a>
+                    </h2>
+                </header>
+                <footer>
+                    <p class="post-info">
+                        This post written by Bader
+                    </p>
+                </footer>
+                <content>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </content>
+            </article>
+        </div>
+    </div> <!-- end of mainContent-->
+    <aside>
+        <article class="right-sidebar">
+            <h2>Right sidebar</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </article>
+        <article class="middle-sidebar">
+            <h2>Middle sidebar</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </article>
+        <article class="left-sidebar">
+            <h2>Left sidebar</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </article>
+    </aside>
+    <footer class="main-footer">
+        <p>
+            جميع الحقوق محفوظة &copy; مؤسسة أمواج الطاقة 2020
+        </p>
+        
+    </footer>
+    <script type="text/javascript">
+	
+        $(document).ready(function() {
+            $('body').bind('cut copy paste', function (e) {
+                e.preventDefault();
+            })
+            $("body").on("contextmenu", function(e) {
+                return false;
+            })
+        })
+        
+    </script>
+</body>
+</html>

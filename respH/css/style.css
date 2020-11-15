@@ -1,0 +1,202 @@
+* {
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global */
+.container {
+  width: 88%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  background: #35424a;
+  color: #fff;
+  padding: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  list-style: none;
+  display: inline;
+  padding: 0 2%;
+}
+#logo {
+}
+#branding {
+  float: left;
+  padding: 5px;
+  line-height: 1;
+}
+
+#branding h4 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+header .heighlight,
+header .current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+header a:hover {
+  color: pink;
+  font-weight: bold;
+}
+/* End of Header */
+
+body {
+  /*font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;*/
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* showcase */
+#showcase {
+  min-height: 400px;
+  background: url(/respH/img/showcase.jpg);
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+
+
+
+/* Newsletter */
+#newsletter {
+  padding: 15px;
+  color: #fff;
+  background: #35424a;
+}
+
+#newsletter h1 {
+  float: left;
+}
+#newsletter form {
+  float: right;
+  margin-top: 15px;
+}
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+.button_1 {
+  height: 38px;
+  background-color: #e8491d;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #f4f4f4;
+}
+
+/* Boxes */
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+#boxes .box img {
+  width: 90px;
+}
+/* sidebar */
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+}
+.dark {
+  padding: 15px;
+  background: #35424a;
+  color: ivory;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Article main-col */
+article#main-col {
+  float: left;
+  width: 65%;
+}
+
+/* services */
+ul#services {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: ivory;
+  background-color: #e8491d;
+  text-align: center;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 1008px) {
+  header #branding,
+  header nav,
+  header li,
+  #newsletter h1,
+  #newsletter form {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  header {
+    padding-bottom: 100px;
+  }
+  #showcase h1 {
+    margin-top: 10px;
+  }
+  #newsletter button {
+      display: block;
+  }
+}

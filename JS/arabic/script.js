@@ -1,3 +1,6 @@
+// activate strict mode for the entire script
+// make it easy for us to write a secure JS code.
+// use strict doesn't do type coercion.
 'use strict'
 let x = 10;
 let y = 20;
@@ -50,10 +53,10 @@ friends[4] = "Hind";
   "Ahmed",
   "Zahra",
   "Hind"); */
-
+console.log("Hind is included: "+friends.includes('Hind'));
 console.log(friends.length);
 friends.length = 3;
-
+console.log("Hind is included: "+friends.includes('Hind'));
 //check if this is array or not ⬇︎.
 console.log(friends.length);
 if (friends.constructor === Array){
@@ -71,7 +74,7 @@ var localString = myDate.toLocaleString();
 console.log('myDate: ', myDate);
 
 console.log('toLocalString: ', localString);
-
+console.log(friends);
 console.log('Using Join: ', friends.join("|"));
 
 
@@ -79,16 +82,21 @@ console.log('Using Join: ', friends.join("|"));
 /* arrayName.splice (index, How Many, Items, Items2, ...) */
 
 friends.splice(3,2, "Zezo", "Suzan");
+console.log("After splice: "+friends);
 console.log(friends);
-friends.pop();
-console.log(friends);
+console.log("Suzan is included: "+friends.includes('Suzan'));
+const popped = friends.pop();
+console.log("This was popped: "+popped);
+console.log("After popped: "+friends);
+console.log("Suzan is included: "+friends.includes('Suzan'));
 var lastItem = friends[friends.length - 1];
-console.log(lastItem);
+console.log("Last Item: "+lastItem);
 friends.shift();
-console.log(friends);
+console.log("After Shift: "+friends);
 
-friends.push('Bader');
-console.log(friends);
+const newLength = friends.push('Bader');
+console.log("After push: "+friends);
+console.log("new length is " + newLength);
 friends[7] = "Khalid";
 friends[8] = "delete";
 console.log(friends);
